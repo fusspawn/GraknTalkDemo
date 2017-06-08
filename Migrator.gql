@@ -1,0 +1,14 @@
+insert                                                                                                                             
+
+$x isa movie
+  has title <movie_title>
+  has director <director_name> 
+  if (<actor_1_name> != "") do { has actor1 <actor_1_name>};
+  if (<actor_2_name> != "") do { has actor2 <actor_2_name>};
+  if (<actor_3_name> != "") do { has actor3 <actor_3_name>};    
+  if (<budget> != "") do { has budget @double(<budget>) }; 
+  if (<gross> != "") do { has gross @double(<gross>) }; 
+  if (<movie_facebook_likes> != "") do { has fblikes @double(<movie_facebook_likes>) };  
+  if (<title_year> != "") do { has title_year @double(<title_year>) }; 
+
+commit;

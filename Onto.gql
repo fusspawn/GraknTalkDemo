@@ -1,0 +1,22 @@
+insert 
+
+movie sub entity
+    has title
+    has director
+    has actor1
+    has actor2
+    has actor3
+    has budget
+    has gross
+    has fblikes
+    has title_year;
+
+    title sub resource datatype string;
+    director sub resource datatype string;
+    actor1 sub resource datatype string;
+    actor2 sub resource datatype string;
+    actor3 sub resource datatype string;
+    budget sub resource datatype double;
+    gross sub resource datatype double;
+    fblikes sub resource datatype double;
+    title_year sub resource datatype double;
