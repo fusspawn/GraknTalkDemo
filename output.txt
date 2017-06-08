@@ -1,14 +1,22 @@
-Exception in thread main java.lang.ExceptionInInitializerError
-Caused by: java.lang.NullPointerException
-at sun.nio.fs.UnixPath.normalizeAndCheck(UnixPath.java:77)
-at sun.nio.fs.UnixPath.<init>(UnixPath.java:71)
-at sun.nio.fs.UnixFileSystem.getPath(UnixFileSystem.java:281)
-at java.nio.file.Paths.get(Paths.java:84)
-at ai.grakn.engine.GraknEngineConfig.getPath(GraknEngineConfig.java:215)
-at ai.grakn.engine.GraknEngineConfig.initialiseLogger(GraknEngineConfig.java:144)
-at ai.grakn.engine.GraknEngineConfig.<init>(GraknEngineConfig.java:110)
-at ai.grakn.engine.GraknEngineConfig.getInstance(GraknEngineConfig.java:98)
-at ai.grakn.engine.GraknEngineServer.<clinit>(GraknEngineServer.java:66)
+root@fusspawn-dev:~/grakn-dist-0.13.0# ./bin/graql.sh -f /media/sf_GraknDemo/Onto.gql{}
+root@fusspawn-dev:~/grakn-dist-0.13.0# ./bin/migration.sh csv -i /media/sf_GraknDemo/movie_metadata.csv -t /media/sf_GraknDemo/Migrator.gql -k grakn -v
+Migrating data /media/sf_GraknDemo/movie_metadata.csv using Grakn Engine localhost:4567 into graph grakn
+Migration complete.
+Gathering information about migrated data. If in a hurry, you can ctrl+c now.
+Graph ontology contains:
+	 0 entity types
+	 0 relation types
+	 0 role types
+	 0 resource types
+	 0 rule types
 
-bin/migration.sh csv -i /media/sf_GrakenDemo/movie_metadata.csv -t ./Migrator.gql -k grakn
-./bin/graql.sh -f /media/sf_GraknDemo/Onto.gql
+Graph data contains:
+	 0 entities
+	 0 relations
+	 0 resources
+	 0 rules
+
+
+
+
+
